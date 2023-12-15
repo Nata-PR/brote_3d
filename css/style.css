@@ -1,0 +1,547 @@
+/*============================================================ BREAKPOINT 1920px ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap");
+@media screen and (max-width: 1920px) {
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#000000, #3f103a);
+    height: 40px;
+    width: 100%;
+    position: sticky;
+    margin: 0;
+    padding: 0 30px 0 0;
+    bottom: 0px;
+  }
+  #footer #Redes img {
+    display: inline;
+    margin: 10px 4px;
+    height: 20px;
+    width: 20px;
+    right: 30px;
+  }
+  #footer #footerLinks {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: white;
+  }
+  #footer #footerLinks #num-wsp {
+    display: inline;
+  }
+  #footer #footerLinks #wspfooter {
+    width: 20px;
+    margin: 0px 5px 3px 5px;
+  }
+  #footer #footerLinks a {
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+  }
+}
+/*============================================================ BREAKPOINT 992px ====================*/
+/*============================================================ BREAKPOINT 576px ====================*/
+@media screen and (max-width: 576px) {
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#000000, #3f103a);
+    height: 40px;
+    width: 100%;
+    position: sticky;
+    margin: 0;
+    padding: 0 30px 0 0;
+  }
+  #footer #Redes img {
+    display: inline;
+    margin: 8px 4px;
+    max-height: 20px;
+    max-width: 20px;
+    right: 30px;
+  }
+  #footer #footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+  }
+  #footer #footerLinks #num-wsp {
+    display: none !important;
+  }
+  #footer #footerLinks #wspfooter {
+    max-width: 20px;
+    margin: 0px 5px 3px 5px;
+  }
+  #footer #footerLinks a {
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+  }
+}
+/*============================================================ BREAKPOINT 1920px ====================*/
+@media screen and (max-width: 1920px) {
+  /*-----------------------------------------------web*/
+  header {
+    background: linear-gradient(#3f103a, #000000, #000000, #000000);
+    position: sticky;
+    margin-top: 0;
+    padding: 5px;
+    z-index: 100;
+    top: 0;
+    height: 40px;
+    width: 100%;
+  }
+  header a {
+    margin: 10px 0 10px 30px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+  .banner {
+    width: 100%;
+    height: 100%;
+  }
+  .banner img {
+    background-size: cover;
+  }
+  .mostrar-menu,
+  .esconder-menu {
+    display: none;
+    transition: 0.4s;
+  }
+  #check {
+    display: none;
+  }
+  /*-------------------------------------------Tienda*/
+  .filter {
+    background: linear-gradient(#000000, #3f103a);
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+  }
+  .filter label {
+    padding: 2px 20px;
+    font-weight: 500;
+  }
+  .filter label #orden {
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 130px;
+    margin: 0;
+  }
+}
+/*============================================================ BREAKPOINT 992px ====================*/
+@media screen and (max-width: 992px) {
+  /*-----------------------------------------------web*/
+  header {
+    background: linear-gradient(#3f103a, #000000, #000000, #000000);
+    position: sticky;
+    margin-top: 0;
+    padding: 5px;
+    z-index: 100;
+    top: 0;
+    height: 40px;
+    width: 100%;
+  }
+  header a {
+    margin: 10px 0 10px 30px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+  .banner {
+    width: 100%;
+    height: 100%;
+  }
+  .banner img {
+    background-size: cover;
+  }
+  .mostrar-menu,
+  .esconder-menu {
+    display: none;
+    transition: 0.4s;
+  }
+  #check {
+    display: none;
+  }
+  /*-------------------------------------------Tienda*/
+  .filter {
+    background: linear-gradient(#000000, #3f103a);
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+  }
+  .filter label {
+    padding: 2px 20px;
+    font-weight: 500;
+  }
+  .filter label #orden {
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 130px;
+    margin: 0;
+  }
+}
+/*============================================================ BREAKPOINT 576px ====================*/
+@media screen and (max-width: 576px) {
+  /*-----------------------------------------------web*/
+  header {
+    place-content: space-between;
+    top: 0px;
+    padding: 0;
+  }
+  header nav a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    align-items: center;
+  }
+  header nav .a:hover {
+    margin: 40px;
+    background-color: rgba(63, 178, 255, 0.726);
+  }
+  .menu {
+    border-radius: 30px;
+    position: fixed;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 96, 99, 0.6431372549);
+    backdrop-filter: blur(6px);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 50% 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .mostrar-menu {
+    color: rgb(255, 123, 0);
+    margin: 0;
+    position: absolute;
+    order: 1;
+    font-size: 40px;
+    top: -10px;
+    right: 30px;
+  }
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+  .esconder-menu {
+    color: rgb(255, 123, 0);
+    position: absolute;
+    font-size: 50px;
+    top: 10px;
+    right: 30px;
+  }
+  #check:checked ~ .menu {
+    cursor: pointer;
+    right: 0;
+  }
+  #check {
+    display: none;
+  }
+}
+/*============================================================ BREAKPOINT 1920px ====================*/
+@media screen and (max-width: 1920px) {
+  /*-------------------------------------------Index*/
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 228, 228);
+    font-size: 12px;
+    overflow: hidden;
+    height: 100%;
+  }
+  #main .contenedor-video {
+    display: flex;
+    height: 400px;
+    position: relative;
+    width: 600px;
+    padding: 20px 0;
+  }
+  #main video {
+    position: absolute;
+    width: 600px;
+    height: auto;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin: 15px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #252424;
+    margin: 15px 0px;
+  }
+  /*-------------------------------------------Tienda*/
+  #grid-productos {
+    gap: 20px;
+    background-color: none;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    overflow: hidden;
+    margin: 20px;
+  }
+  #grid-productos .card {
+    max-width: 220px;
+    height: auto;
+    background-color: gainsboro;
+    border-radius: 15px;
+  }
+  #grid-productos .card button {
+    width: 80px;
+    border-radius: 4px;
+    background: #3f103a;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  #grid-productos .card img.producto {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  #grid-productos .card .card-body {
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #grid-productos .card .card-body .card-text {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0px;
+  }
+  #grid-productos .card .card-body .card-text .card-subtext {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0px;
+  }
+  #grid-productos .card .card-body .card-text .card-subtext .card-title {
+    text-align: center;
+    font-weight: 600;
+  }
+  /*--------------------------------------------------Contacto*/
+  #contenedor-contacto {
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 50px;
+  }
+  #contenedor-contacto #mapa {
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #contenedor-contacto form {
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 480px;
+  }
+  #contenedor-contacto form label {
+    display: block;
+  }
+  #contenedor-contacto form input, #contenedor-contacto form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+  #contenedor-contacto button {
+    width: 80px;
+    font-size: 14px;
+    background-color: #3f103a;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #contenedor-contacto button:hover {
+    background-color: rgb(255, 123, 0);
+  }
+  /*-------------------------------------------Servicios*/
+  #servicios {
+    text-align: justify;
+    background-color: rgb(235, 228, 228);
+    font-size: 16px;
+    height: 100vh;
+    margin: 0 40px;
+  }
+  #servicios .Articulos {
+    padding: 20px;
+  }
+  /*-------------------------------------------FAQ*/
+  #FAQ {
+    text-align: justify;
+    background-color: rgb(235, 228, 228);
+    font-size: 16px;
+    overflow: hidden;
+    height: 100%;
+    margin: 0 40px;
+  }
+  #FAQ .Preguntas {
+    padding: 20px;
+  }
+}
+/*============================================================ BREAKPOINT 992px ====================*/
+@media screen and (max-width: 992px) {
+  /*-------------------------------------------------Contacto*/
+  #contenedor-contacto {
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+  }
+  #mapa {
+    max-width: 450px;
+    margin: 20px;
+  }
+  /*-------------------------------------------------Tienda*/
+  #grid-productos {
+    background-color: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+  }
+  #grid-productos .card {
+    height: auto;
+    background-color: gainsboro;
+    border-radius: 15px;
+  }
+  #grid-productos .card button {
+    width: 80px;
+    border-radius: 4px;
+    background: #3f103a;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  #grid-productos .card img.producto {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  #grid-productos .card .card-body {
+    max-height: 300px;
+    align-items: center;
+  }
+  #grid-productos .card .card-body .card-text {
+    font-size: 12px;
+    text-align: center;
+  }
+  #grid-productos .card .card-body .card-text .card-subtext {
+    font-size: 14px;
+    text-align: center;
+  }
+  #grid-productos .card .card-body .card-text .card-subtext .card-title {
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+/*============================================================ BREAKPOINT 576px ====================*/
+/*-------------------------------------------------Tienda*/
+@media screen and (max-width: 576px) {
+  #main {
+    overflow: hidden;
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 0px;
+    height: 100%;
+  }
+  #grid-productos {
+    background-color: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+  #grid-productos .card {
+    height: auto;
+    background-color: gainsboro;
+    border-radius: 15px;
+  }
+  #grid-productos .card img.producto {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  #grid-productos .card .card-body {
+    max-height: 300px;
+    align-items: center;
+  }
+  #grid-productos .card .card-body .card-text {
+    font-size: 16px;
+    text-align: center;
+  }
+  #grid-productos .card .card-body .card-text .card-title {
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #grid-productos .card .card-body .card-text .card-title .card-subtext {
+    font-size: 14px;
+    text-align: center;
+  }
+  /*-------------------------------------------------contacto*/
+  #contenedor-contacto {
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+  }
+  #mapa {
+    max-width: 400px;
+    height: 400px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+* body {
+  background-color: rgb(235, 228, 228);
+}
+
+/*# sourceMappingURL=style.css.map */
