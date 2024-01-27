@@ -1,8 +1,9 @@
 /*============================================================ BREAKPOINT 1920px ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,500;0,700;1,100;1,200;1,500;1,700&display=swap");
 @media screen and (max-width: 1920px) {
   #footer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background: linear-gradient(#000000, #3f103a);
     height: 40px;
@@ -18,6 +19,7 @@
     height: 20px;
     width: 20px;
     right: 30px;
+    cursor: pointer;
   }
   #footer #footerLinks {
     display: inline;
@@ -42,10 +44,17 @@
   }
 }
 /*============================================================ BREAKPOINT 992px ====================*/
+@media screen and (max-width: 992px) {
+  #footer {
+    bottom: 0px;
+    align-items: center;
+  }
+}
 /*============================================================ BREAKPOINT 576px ====================*/
 @media screen and (max-width: 576px) {
   #footer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background: linear-gradient(#000000, #3f103a);
     height: 40px;
@@ -53,6 +62,7 @@
     position: sticky;
     margin: 0;
     padding: 0 30px 0 0;
+    bottom: 0px;
   }
   #footer #Redes img {
     display: inline;
@@ -69,7 +79,7 @@
     margin: 10px 20px 10px 20px;
   }
   #footer #footerLinks #num-wsp {
-    display: none !important;
+    display: none;
   }
   #footer #footerLinks #wspfooter {
     max-width: 20px;
@@ -261,11 +271,11 @@
 @media screen and (max-width: 1920px) {
   /*-------------------------------------------Index*/
   #main {
+    margin: 60px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(235, 228, 228);
-    font-size: 12px;
     overflow: hidden;
     height: 100%;
   }
@@ -275,6 +285,8 @@
     position: relative;
     width: 600px;
     padding: 20px 0;
+    margin: 20px 0px;
+    justify-content: center;
   }
   #main video {
     position: absolute;
@@ -282,7 +294,7 @@
     height: auto;
   }
   h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     color: #000000;
     text-align: center;
@@ -393,9 +405,11 @@
   /*-------------------------------------------Servicios*/
   #servicios {
     text-align: justify;
+    align-items: center;
     background-color: rgb(235, 228, 228);
     font-size: 16px;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
     margin: 0 40px;
   }
   #servicios .Articulos {
@@ -478,9 +492,9 @@
 /*-------------------------------------------------Tienda*/
 @media screen and (max-width: 576px) {
   #main {
+    margin: 60px 40px;
     overflow: hidden;
     background-color: rgb(233, 233, 233);
-    margin-bottom: 0px;
     height: 100%;
   }
   #grid-productos {
@@ -534,11 +548,12 @@
   }
 }
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
 }
 * body {
   background-color: rgb(235, 228, 228);
