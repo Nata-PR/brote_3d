@@ -95,6 +95,8 @@
 @media screen and (max-width: 1920px) {
   /*-----------------------------------------------web*/
   header {
+    text-align: center;
+    justify-content: center;
     background: linear-gradient(#3f103a, #000000, #000000, #000000);
     position: sticky;
     margin-top: 0;
@@ -126,7 +128,7 @@
   #check {
     display: none;
   }
-  /*-------------------------------------------Tienda*/
+  /*------------------------------------------Desplegable*/
   .filter {
     background: linear-gradient(#000000, #3f103a);
     display: flex;
@@ -182,7 +184,7 @@
   #check {
     display: none;
   }
-  /*-------------------------------------------Tienda*/
+  /*-------------------------------------------Desplegable*/
   .filter {
     background: linear-gradient(#000000, #3f103a);
     display: flex;
@@ -207,11 +209,12 @@
 @media screen and (max-width: 576px) {
   /*-----------------------------------------------web*/
   header {
+    justify-content: center;
     place-content: space-between;
     top: 0px;
     padding: 0;
   }
-  header nav a {
+  nav a {
     color: #fff;
     font-size: 14px;
     text-decoration: none;
@@ -220,7 +223,7 @@
     text-transform: uppercase;
     align-items: center;
   }
-  header nav .a:hover {
+  nav .a:hover {
     margin: 40px;
     background-color: rgba(63, 178, 255, 0.726);
   }
@@ -266,6 +269,9 @@
   #check {
     display: none;
   }
+  .banner {
+    display: none;
+  }
 }
 /*============================================================ BREAKPOINT 1920px ====================*/
 @media screen and (max-width: 1920px) {
@@ -275,7 +281,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(235, 228, 228);
     overflow: hidden;
     height: 100%;
   }
@@ -293,17 +298,23 @@
     width: 600px;
     height: auto;
   }
-  h2 {
-    font-size: 24px;
+  h1 {
+    font-size: 26px;
     font-weight: 600;
     color: #000000;
     text-align: center;
     margin: 15px;
   }
-  h3 {
-    font-size: 16px;
+  h2 {
+    font-size: 22px;
     font-weight: 600;
-    color: #252424;
+    color: #181818;
+    margin: 15px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #474040;
     margin: 15px 0px;
   }
   /*-------------------------------------------Tienda*/
@@ -417,7 +428,7 @@
   }
   /*-------------------------------------------FAQ*/
   #FAQ {
-    text-align: justify;
+    text-align: left;
     background-color: rgb(235, 228, 228);
     font-size: 16px;
     overflow: hidden;
@@ -426,6 +437,9 @@
   }
   #FAQ .Preguntas {
     padding: 20px;
+  }
+  #FAQ .Preguntas h2 {
+    text-align: center;
   }
 }
 /*============================================================ BREAKPOINT 992px ====================*/
@@ -553,10 +567,10 @@
   padding: 0;
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
-  font-size: 16px;
+  font-size: 18px;
 }
 * body {
-  background-color: rgb(235, 228, 228);
+  background-color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */

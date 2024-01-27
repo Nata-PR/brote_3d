@@ -2,7 +2,10 @@
 @media screen and (max-width: 1920px) {
 /*-----------------------------------------------web*/
     header {
-        background: linear-gradient(#3f103a, #000000, #000000, #000000);
+        text-align: center;      
+        justify-content: center;
+        background: 
+        linear-gradient(#3f103a, #000000, #000000, #000000);
         position: sticky;
         margin-top: 0;
         padding: 5px;
@@ -37,7 +40,7 @@
     #check {
             display:none;
     }
-/*-------------------------------------------Tienda*/
+/*------------------------------------------Desplegable*/
     .filter {
         background: linear-gradient(#000000,#3f103a);
         display: flex;
@@ -100,7 +103,7 @@
     #check {
             display:none;
     }
-/*-------------------------------------------Tienda*/
+/*-------------------------------------------Desplegable*/
     .filter {
         background: linear-gradient(#000000,#3f103a);
         display: flex;
@@ -126,43 +129,52 @@
 
 /*============================================================ BREAKPOINT 576px ====================*/
 
+
 @media screen and (max-width: 576px) {
-/*-----------------------------------------------web*/
+    /*-----------------------------------------------web*/
     header {
-    place-content: space-between;
-    top:0px;
-    padding: 0;
-        nav a {
+        justify-content: center;
+        place-content: space-between;
+        top: 0px;
+        padding: 0;
+  
+    }
+
+    nav a {
+        
         color: #fff;
         font-size: 14px;
-        text-decoration:none;
+        text-decoration: none;
         padding: 10px;
         display: block;
         text-transform: uppercase;
         align-items: center;
-    }      
-        nav .a:hover {
-        margin: 40px;
-        background-color:rgba(63, 178, 255, 0.726);
-        }
+  
     }
 
-.menu{
-    border-radius: 30px;
-    position:fixed;
-    text-decoration:none;
-    width:100%;
-    height: 100%;
-    background: #646063a4;
-    backdrop-filter: blur(6px);
-    right: -100%;
-    top:0;
-    text-align: center;
-    padding: 50% 0px;
-    z-index: 100;
-    transition:0.8s;
+    nav .a:hover {
+        margin: 40px;
+        background-color: rgba(63, 178, 255, 0.726);
     }
-     .mostrar-menu{
+
+    .menu {
+      
+        border-radius: 30px;
+        position: fixed;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        background: #646063a4;
+        backdrop-filter: blur(6px);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 50% 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .mostrar-menu {
         color: rgb(255, 123, 0);
         margin: 0;
         position: absolute;
@@ -171,24 +183,31 @@
         top: -10px;
         right: 30px;
     }
- 
-    .mostrar-menu,
-    .esconder-menu{
-        display: block;
 
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
     }
-    .esconder-menu{
+
+    .esconder-menu {
         color: rgb(255, 123, 0);
         position: absolute;
         font-size: 50px;
         top: 10px;
         right: 30px;
     }
-    #check:checked ~ .menu{
+
+    #check:checked ~ .menu {
         cursor: pointer;
-        right:0;
+        right: 0;
     }
+
     #check {
         display: none;
+    }
+
+
+  .banner {
+              display: none;
     }
 }
