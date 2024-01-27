@@ -4,28 +4,28 @@
 
 /*-------------------------------------------Index*/
 #main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(235, 228, 228);
-  font-size: 12px;
-  overflow: hidden;
-  height: 100%;
-  
-    .contenedor-video {
     display: flex;
-    height: 400px;
-    position: relative;
-    width: 600px;
-    padding: 20px 0;
-    }
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 228, 228);
+    font-size: 12px;
+    overflow: hidden;
+    height: 100%;
+  
+        .contenedor-video {
+        display: flex;
+        height: 400px;
+        position: relative;
+        width: 600px;
+        padding: 20px 0;
+        }
 
-    video {
-    position: absolute;
-    width: 600px;
-    height: auto;
+        video {
+        position: absolute;
+        width: 600px;
+        height: auto;
+        }
     }
-}
 
 h2 {
     font-size: 18px;
