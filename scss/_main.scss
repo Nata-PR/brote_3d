@@ -2,13 +2,12 @@
 
 @media screen and (max-width: 1920px){
 
-/*-------------------------------------------Index*/
+/*-------------------------------------------Index 1920px */
 #main {
-    margin: 60px 40px;
+    margin: 50px 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
     overflow: hidden;
     height: 100%;
   
@@ -29,12 +28,12 @@
         }
     }
 h1{
+    text-transform: uppercase;
     font-size: 26px;
     font-weight: 600;
     color: #000000;
     text-align: center;
-    margin: 15px;
-
+    align-items: center;
 }
 
 
@@ -42,7 +41,8 @@ h2 {
     font-size: 22px;
     font-weight: 600;
     color: #181818;
-    margin: 15px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 h3{
@@ -51,8 +51,12 @@ h3{
     color: #474040;
     margin: 15px 0px;
 }
+article{
+    text-align: justify;
+}
 
-/*-------------------------------------------Tienda*/
+/*-------------------------------------------Tienda 1920px */
+
 #grid-productos {
     gap: 20px;
     background-color: none;
@@ -62,17 +66,18 @@ h3{
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 30px;
     overflow: hidden;
-    margin: 20px;
 
         .card {
+        align-items: center;
         max-width: 220px;
         height: auto;
         background-color: gainsboro;
         border-radius: 15px;
 
         button {
-        width: 80px;
-        border-radius: 4px;
+        font-size: 16px;
+        width: 100px;
+        border-radius: 10px;
         background: #3f103a;
         color: rgb(255, 255, 255);
         cursor: pointer;
@@ -91,45 +96,45 @@ h3{
             border-radius: 5px;
                 .card-text {
                 font-size: 20px;
-                text-align: center;
-                padding: 5px 0;
+                text-transform: uppercase;
+                text-align:justify;
+                padding: 0px;
                 margin: 0px;
-                    .card-subtext {
-                    font-size: 18px;
-                    text-align: center;
-                    padding: 5px 0;
+             .card-subtext {
+                    font-size: 8px;
+                    padding: 0px;
                     margin: 0px;
-                        .card-title {
-                        text-align: center;
-                        font-weight: 600;
-                        }
+                    }
+                    .card-title {
+                    text-align: justify;
                     }
                 }
             }
         }
     }
 
-/*--------------------------------------------------Contacto*/
+/*--------------------------------------------------Contacto 1920px */
 #contenedor-contacto{
     height: auto;
+    justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    margin: 50px; 
+    gap: 30px;
+    margin: 20px auto ; 
         #mapa{
             margin-top: 20px; 
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(29, 24, 24, 0.2);
         }
 
         form {
             background-color: #fff;
-            padding: 50px 20px;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(29, 24, 24, 0.2);
             width: 300px;
-            height: 480px;
+            height: auto;
                 label {
                 display: block;
                 }
@@ -138,7 +143,7 @@ h3{
                 width: 100%;
                 padding: 8px;
                 margin-bottom: 5px;
-                box-sizing: border-box;
+            
                 }
             }
 
@@ -159,37 +164,29 @@ h3{
     
     }
 
-/*-------------------------------------------Servicios*/
+/*-------------------------------------------Servicios 1920px */
 #servicios{
+    margin: 50px 200px;
     text-align: justify;
     align-items: center;
-    background-color: rgb(235, 228, 228);
-    font-size: 16px;
     height: 100%;
     overflow: hidden;
-    margin: 0 40px;
-
         .Articulos{
             padding: 20px ;  
         }
     }
 
-/*-------------------------------------------FAQ*/
+/*-------------------------------------------FAQ 1920px */
 
 #FAQ {
+    margin: 50px 200px;
     text-align:left;
-    background-color: rgb(235, 228, 228);
     font-size: 16px;
     overflow: hidden;
-    height: 100%;
-    margin: 0 40px;
-            
-        .Preguntas{
-            padding: 20px ; 
-            h2{
-                text-align: center;
-            } 
-        }
+    height: 100%;     
+        h2{
+        text-align: center;
+        }   
     }
 }
 
@@ -197,22 +194,43 @@ h3{
 /*============================================================ BREAKPOINT 992px ====================*/
 
 @media screen and (max-width: 992px){
-/*-------------------------------------------------Contacto*/
-   #contenedor-contacto{
+/*-------------------------------------------------Index 992px */
+
+#main, #servicios, #FAQ {
+    margin: 50px 120px; }
+/*-------------------------------------------------Contacto 992px */
+
+  #contenedor-contacto{
+    margin: 20px auto;
     height: auto;
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    overflow: hidden;
-}
-#mapa{
-    max-width: 450px;
-    margin: 20px;
-}
 
-/*-------------------------------------------------Tienda*/
+
+        #mapa{
+        padding: 0;
+        min-width: 30%;
+        min-height: 30%;
+        }
+        form {
+        border-radius: 8px;
+        max-width: auto;
+        height: auto;
+            label {
+            display:flex; }
+
+            input , textarea {
+            justify-content: flex-end;
+            max-width: 230px;  
+            }
+        }
+    }
+
+/*-------------------------------------------------Tienda 992px */
 #grid-productos {
+    
     background-color: none;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -262,18 +280,17 @@ h3{
         }
 
     }
-
 }
+    /*-------------------------------------------------Servicios 992px */
 
 /*============================================================ BREAKPOINT 576px ====================*/
 
-/*-------------------------------------------------Tienda*/
+/*-------------------------------------------------Tienda 576px */
 @media screen and (max-width: 576px){
     
-    #main {
+    #main, #servicios, #FAQ {
     margin: 60px 40px;
     overflow: hidden;
-    background-color: rgb(233, 233, 233);
     height: 100%;
     }
 
@@ -323,23 +340,32 @@ h3{
 }
 
 
-*/
-
-
-
-/*-------------------------------------------------contacto*/
+/*-------------------------------------------------contacto 576px */
 #contenedor-contacto{
     height: auto;
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     overflow: hidden;
+
     }
     #mapa{
         max-width: 400px;
         height: 400px;
+    }
+    form {
+        border-radius: 8px;
+        max-width: auto;
+        height: auto;
+        margin: 30px;
+            label {
+            display:flex; }
 
+    input , textarea {
+               padding: 0;
+        justify-content: flex-end;
+        max-width: 230px;  
+        }
     }
 
 }

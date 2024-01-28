@@ -1,18 +1,603 @@
-/* Error: expected selector.
- *     ,
- * 326 | *∕
- *     |  ^
- *     '
- *   scss\_main.scss 326:2  @import
- *   scss\style.scss 3:9    root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected selector.\a     \2577 \a 326 \2502  */\d\a     \2502   ^\a     \2575 \a   scss\\_main.scss 326:2  @import\a   scss\\style.scss 3:9    root stylesheet";
+/*============================================================ BREAKPOINT 1920px ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,500;0,700;1,100;1,200;1,500;1,700&display=swap");
+@media screen and (max-width: 1920px) {
+  #footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#000000, #3f103a);
+    height: 40px;
+    width: 100%;
+    position: sticky;
+    margin: 0;
+    padding: 0 30px 0 0;
+    bottom: 0px;
+  }
+  #footer #Redes img {
+    display: inline;
+    margin: 10px 4px;
+    height: 20px;
+    width: 20px;
+    right: 30px;
+    cursor: pointer;
+  }
+  #footer #footerLinks {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: white;
+  }
+  #footer #footerLinks #num-wsp {
+    display: inline;
+  }
+  #footer #footerLinks #wspfooter {
+    width: 20px;
+    margin: 0px 5px 3px 5px;
+  }
+  #footer #footerLinks a {
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+  }
 }
+/*============================================================ BREAKPOINT 992px ====================*/
+@media screen and (max-width: 992px) {
+  #footer {
+    bottom: 0px;
+    align-items: center;
+  }
+}
+/*============================================================ BREAKPOINT 576px ====================*/
+@media screen and (max-width: 576px) {
+  #footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#000000, #3f103a);
+    height: 40px;
+    width: 100%;
+    position: sticky;
+    margin: 0;
+    padding: 0 30px 0 0;
+    bottom: 0px;
+  }
+  #footer #Redes img {
+    display: inline;
+    margin: 8px 4px;
+    max-height: 20px;
+    max-width: 20px;
+    right: 30px;
+  }
+  #footer #footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+  }
+  #footer #footerLinks #num-wsp {
+    display: none;
+  }
+  #footer #footerLinks #wspfooter {
+    max-width: 20px;
+    margin: 0px 5px 3px 5px;
+  }
+  #footer #footerLinks a {
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+  }
+}
+/*============================================================ BREAKPOINT 1920px ====================*/
+@media screen and (max-width: 1920px) {
+  /*-----------------------------------------------web*/
+  header {
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(#3f103a, #000000, #000000, #000000);
+    position: sticky;
+    margin-top: 0;
+    padding: 5px;
+    z-index: 100;
+    top: 0;
+    height: 40px;
+    width: 100%;
+  }
+  header a {
+    margin: 10px 0 10px 30px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+  .banner {
+    width: 100%;
+    height: 100%;
+  }
+  .banner img {
+    background-size: cover;
+  }
+  .mostrar-menu,
+  .esconder-menu {
+    display: none;
+    transition: 0.4s;
+  }
+  #check {
+    display: none;
+  }
+  /*------------------------------------------Desplegable*/
+  .filter {
+    background: linear-gradient(#000000, #3f103a);
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+  }
+  .filter label {
+    padding: 2px 20px;
+    font-weight: 500;
+  }
+  .filter label #orden {
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 130px;
+    margin: 0;
+  }
+}
+/*============================================================ BREAKPOINT 992px ====================*/
+@media screen and (max-width: 992px) {
+  /*-----------------------------------------------web*/
+  header {
+    background: linear-gradient(#3f103a, #000000, #000000, #000000);
+    position: sticky;
+    margin-top: 0;
+    padding: 5px;
+    z-index: 100;
+    top: 0;
+    height: 40px;
+    width: 100%;
+  }
+  header a {
+    margin: 10px 0 10px 30px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+  .banner {
+    width: 100%;
+    height: 100%;
+  }
+  .banner img {
+    background-size: cover;
+  }
+  .mostrar-menu,
+  .esconder-menu {
+    display: none;
+    transition: 0.4s;
+  }
+  #check {
+    display: none;
+  }
+  /*-------------------------------------------Desplegable*/
+  .filter {
+    background: linear-gradient(#000000, #3f103a);
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+  }
+  .filter label {
+    padding: 2px 20px;
+    font-weight: 500;
+  }
+  .filter label #orden {
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 130px;
+    margin: 0;
+  }
+}
+/*============================================================ BREAKPOINT 576px ====================*/
+@media screen and (max-width: 576px) {
+  /*-----------------------------------------------web*/
+  header {
+    justify-content: center;
+    place-content: space-between;
+    top: 0px;
+    padding: 0;
+  }
+  nav a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    align-items: center;
+  }
+  nav .a:hover {
+    margin: 40px;
+    background-color: rgba(63, 178, 255, 0.726);
+  }
+  .menu {
+    border-radius: 30px;
+    position: fixed;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 96, 99, 0.6431372549);
+    backdrop-filter: blur(6px);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 50% 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .mostrar-menu {
+    color: rgb(255, 123, 0);
+    margin: 0;
+    position: absolute;
+    order: 1;
+    font-size: 40px;
+    top: -10px;
+    right: 30px;
+  }
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+  .esconder-menu {
+    color: rgb(255, 123, 0);
+    position: absolute;
+    font-size: 50px;
+    top: 10px;
+    right: 30px;
+  }
+  #check:checked ~ .menu {
+    cursor: pointer;
+    right: 0;
+  }
+  #check {
+    display: none;
+  }
+  .banner {
+    display: none;
+  }
+}
+/*============================================================ BREAKPOINT 1920px ====================*/
+@media screen and (max-width: 1920px) {
+  /*-------------------------------------------Index 1920px */
+  #main {
+    margin: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+  }
+  #main .contenedor-video {
+    display: flex;
+    height: 400px;
+    position: relative;
+    width: 600px;
+    padding: 20px 0;
+    margin: 20px 0px;
+    justify-content: center;
+  }
+  #main video {
+    position: absolute;
+    width: 600px;
+    height: auto;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #181818;
+    margin: 20px auto;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #474040;
+    margin: 15px 0px;
+  }
+  article {
+    text-align: justify;
+  }
+  /*-------------------------------------------Tienda 1920px */
+  #grid-productos {
+    gap: 20px;
+    background-color: none;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    overflow: hidden;
+  }
+  #grid-productos .card {
+    align-items: center;
+    max-width: 220px;
+    height: auto;
+    background-color: gainsboro;
+    border-radius: 15px;
+  }
+  #grid-productos .card button {
+    font-size: 16px;
+    width: 100px;
+    border-radius: 10px;
+    background: #3f103a;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  #grid-productos .card img.producto {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  #grid-productos .card .card-body {
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #grid-productos .card .card-body .card-text {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+  }
+  #grid-productos .card .card-body .card-text .card-subtext {
+    font-size: 8px;
+    padding: 0px;
+    margin: 0px;
+  }
+  #grid-productos .card .card-body .card-text .card-title {
+    text-align: justify;
+  }
+  /*--------------------------------------------------Contacto 1920px */
+  #contenedor-contacto {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px auto;
+  }
+  #contenedor-contacto #mapa {
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(29, 24, 24, 0.2);
+  }
+  #contenedor-contacto form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(29, 24, 24, 0.2);
+    width: 300px;
+    height: auto;
+  }
+  #contenedor-contacto form label {
+    display: block;
+  }
+  #contenedor-contacto form input, #contenedor-contacto form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+  }
+  #contenedor-contacto button {
+    width: 80px;
+    font-size: 14px;
+    background-color: #3f103a;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #contenedor-contacto button:hover {
+    background-color: rgb(255, 123, 0);
+  }
+  /*-------------------------------------------Servicios 1920px */
+  #servicios {
+    margin: 50px 200px;
+    text-align: justify;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  #servicios .Articulos {
+    padding: 20px;
+  }
+  /*-------------------------------------------FAQ 1920px */
+  #FAQ {
+    margin: 50px 200px;
+    text-align: left;
+    font-size: 16px;
+    overflow: hidden;
+    height: 100%;
+  }
+  #FAQ h2 {
+    text-align: center;
+  }
+}
+/*============================================================ BREAKPOINT 992px ====================*/
+@media screen and (max-width: 992px) {
+  /*-------------------------------------------------Index 992px */
+  #main, #servicios, #FAQ {
+    margin: 50px 120px;
+  }
+  /*-------------------------------------------------Contacto 992px */
+  #contenedor-contacto {
+    margin: 20px auto;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #contenedor-contacto #mapa {
+    padding: 0;
+    min-width: 30%;
+    min-height: 30%;
+  }
+  #contenedor-contacto form {
+    border-radius: 8px;
+    max-width: auto;
+    height: auto;
+  }
+  #contenedor-contacto form label {
+    display: flex;
+  }
+  #contenedor-contacto form input, #contenedor-contacto form textarea {
+    justify-content: flex-end;
+    max-width: 230px;
+  }
+  /*-------------------------------------------------Tienda 992px */
+  #grid-productos {
+    background-color: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+  }
+  #grid-productos .card {
+    height: auto;
+    background-color: gainsboro;
+    border-radius: 15px;
+  }
+  #grid-productos .card button {
+    width: 80px;
+    border-radius: 4px;
+    background: #3f103a;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  #grid-productos .card img.producto {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  #grid-productos .card .card-body {
+    max-height: 300px;
+    align-items: center;
+  }
+  #grid-productos .card .card-body .card-text {
+    font-size: 12px;
+    text-align: center;
+  }
+  #grid-productos .card .card-body .card-text .card-subtext {
+    font-size: 14px;
+    text-align: center;
+  }
+  #grid-productos .card .card-body .card-text .card-subtext .card-title {
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+/*-------------------------------------------------Servicios 992px */
+/*============================================================ BREAKPOINT 576px ====================*/
+/*-------------------------------------------------Tienda 576px */
+@media screen and (max-width: 576px) {
+  #main, #servicios, #FAQ {
+    margin: 60px 40px;
+    overflow: hidden;
+    height: 100%;
+  }
+  #grid-productos {
+    background-color: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+  #grid-productos .card {
+    height: auto;
+    background-color: gainsboro;
+    border-radius: 15px;
+  }
+  #grid-productos .card img.producto {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  #grid-productos .card .card-body {
+    max-height: 300px;
+    align-items: center;
+  }
+  #grid-productos .card .card-body .card-text {
+    font-size: 16px;
+    text-align: center;
+  }
+  #grid-productos .card .card-body .card-text .card-title {
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #grid-productos .card .card-body .card-text .card-title .card-subtext {
+    font-size: 14px;
+    text-align: center;
+  }
+  /*-------------------------------------------------contacto 576px */
+  #contenedor-contacto {
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #mapa {
+    max-width: 400px;
+    height: 400px;
+  }
+  form {
+    border-radius: 8px;
+    max-width: auto;
+    height: auto;
+    margin: 30px;
+  }
+  form label {
+    display: flex;
+  }
+  form input, form textarea {
+    padding: 0;
+    justify-content: flex-end;
+    max-width: 230px;
+  }
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+}
+* body {
+  background-color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=style.css.map */
