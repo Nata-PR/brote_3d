@@ -70,31 +70,30 @@
 @media screen and (max-width: 576px){
 
 #footer  {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(#000000, #3f103a);
-    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    background: linear-gradient(#a19ea1, hsl(306, 59%, 15%),  hsl(306, 59%, 15%), hsl(309, 66%, 6%));
+    height: 50px;
     width: 100%;
     position: sticky;
-    margin: 0 ;
-    padding: 0 30px 0 0;
-    bottom: 0px;
-    
+    z-index: 100;    
 
-        #Redes img {
-        display: inline;
-        margin: 8px 4px ;
+        #Redes, img {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px;
         max-height: 20px;
         max-width: 20px;
-        right: 30px;
     }
         #footerLinks {
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
         margin: 10px 20px 10px 20px;
+
+   
 
             #num-wsp{
                 display: none ;

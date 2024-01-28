@@ -40,26 +40,7 @@
     #check {
             display:none;
     }
-/*------------------------------------------Desplegable*/
-    .filter {
-        background: linear-gradient(#000000,#3f103a);
-        display: flex;
-        justify-content: end;
-        padding-right: 30px;
-        color: rgb(255, 255, 255);
-        align-items: center;
-            label{
-            padding: 2px 20px;
-            font-weight: 500;
-                #orden{
-                height: 20px;
-                border-radius: 5px;
-                text-align: center;
-                width: 130px;
-                margin: 0;
-            }
-        }
-    }
+
 
 }
 
@@ -69,7 +50,7 @@
 @media screen and (max-width: 992px) {  
 /*-----------------------------------------------web*/     
     header {
-        background: linear-gradient(#3f103a, #000000, #000000, #000000);
+        background: linear-gradient( #000000, #3f103a);
         position: sticky;
         margin-top: 0;
         padding: 5px;
@@ -105,7 +86,7 @@
     }
 /*-------------------------------------------Desplegable*/
     .filter {
-        background: linear-gradient(#000000,#3f103a);
+        background: linear-gradient(#3f103a,#a19ea1);
         display: flex;
         justify-content: end;
         padding-right: 30px;
@@ -133,54 +114,81 @@
 @media screen and (max-width: 576px) {
     /*-----------------------------------------------web*/
     header {
+        height: 60px;
         justify-content: center;
         place-content: space-between;
-        top: 0px;
-        padding: 0;
-  
+        top: 0;
+
+            #icon-open{
+            width: 65px;
+            height: auto;
+            order: 1;
+            cursor: pointer;
+            }
+
+            #icon-close{
+            width: 60px;
+            height: auto;
+            order: 1;
+            cursor: pointer;
+            }
+        }
+
+    /*------------------------------------------Desplegable*/
+    .filter {
+        background: linear-gradient( hsl(306, 59%, 15%),#a19ea1);
+        justify-content:center;
+        color: rgb(230, 223, 223);
+        border-radius: 0 0 10px 10px;
+
+
+            label{          
+            display: none;
+
+                #orden{
+                height: 20px;
+                border-radius: 5px;
+                text-align: center;
+
+                    option {
+                        font-size: 16px;
+                    }
+            }
+        }
     }
 
-    nav a {
-        
-        color: #fff;
-        font-size: 14px;
-        text-decoration: none;
-        padding: 10px;
-        display: block;
-        text-transform: uppercase;
-        align-items: center;
-  
-    }
-
-    nav .a:hover {
-        margin: 40px;
-        background-color: rgba(63, 178, 255, 0.726);
-    }
 
     .menu {
-      
+        padding-top: 30px;
         border-radius: 30px;
         position: fixed;
         text-decoration: none;
-        width: 100%;
-        height: 100%;
-        background: #646063a4;
+        width: 70%;
+        height: 30%;
+        background: #534c52a4;
         backdrop-filter: blur(6px);
         right: -100%;
-        top: 0;
-        text-align: center;
-        padding: 50% 0px;
+        top: 5px;
         z-index: 100;
-        transition: 0.8s;
+        transition: 0.5s;
+
+            a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            text-align: left;
+            padding-left: 10px;
+    
+        }
     }
 
     .mostrar-menu {
-        color: rgb(255, 123, 0);
         margin: 0;
         position: absolute;
-        order: 1;
         font-size: 40px;
-        top: -10px;
+        top: -5px;
         right: 30px;
     }
 
@@ -205,7 +213,6 @@
     #check {
         display: none;
     }
-
 
   .banner {
               display: none;

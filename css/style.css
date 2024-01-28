@@ -53,26 +53,24 @@
 /*============================================================ BREAKPOINT 576px ====================*/
 @media screen and (max-width: 576px) {
   #footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(#000000, #3f103a);
-    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    background: linear-gradient(#a19ea1, hsl(306, 59%, 15%), hsl(306, 59%, 15%), hsl(309, 66%, 6%));
+    height: 50px;
     width: 100%;
     position: sticky;
-    margin: 0;
-    padding: 0 30px 0 0;
-    bottom: 0px;
+    z-index: 100;
   }
-  #footer #Redes img {
-    display: inline;
-    margin: 8px 4px;
+  #footer #Redes, #footer img {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
     max-height: 20px;
     max-width: 20px;
-    right: 30px;
   }
   #footer #footerLinks {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
@@ -128,32 +126,12 @@
   #check {
     display: none;
   }
-  /*------------------------------------------Desplegable*/
-  .filter {
-    background: linear-gradient(#000000, #3f103a);
-    display: flex;
-    justify-content: end;
-    padding-right: 30px;
-    color: rgb(255, 255, 255);
-    align-items: center;
-  }
-  .filter label {
-    padding: 2px 20px;
-    font-weight: 500;
-  }
-  .filter label #orden {
-    height: 20px;
-    border-radius: 5px;
-    text-align: center;
-    width: 130px;
-    margin: 0;
-  }
 }
 /*============================================================ BREAKPOINT 992px ====================*/
 @media screen and (max-width: 992px) {
   /*-----------------------------------------------web*/
   header {
-    background: linear-gradient(#3f103a, #000000, #000000, #000000);
+    background: linear-gradient(#000000, #3f103a);
     position: sticky;
     margin-top: 0;
     padding: 5px;
@@ -186,7 +164,7 @@
   }
   /*-------------------------------------------Desplegable*/
   .filter {
-    background: linear-gradient(#000000, #3f103a);
+    background: linear-gradient(#3f103a, #a19ea1);
     display: flex;
     justify-content: end;
     padding-right: 30px;
@@ -209,46 +187,69 @@
 @media screen and (max-width: 576px) {
   /*-----------------------------------------------web*/
   header {
+    height: 60px;
     justify-content: center;
     place-content: space-between;
-    top: 0px;
-    padding: 0;
+    top: 0;
   }
-  nav a {
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    text-transform: uppercase;
-    align-items: center;
+  header #icon-open {
+    width: 65px;
+    height: auto;
+    order: 1;
+    cursor: pointer;
   }
-  nav .a:hover {
-    margin: 40px;
-    background-color: rgba(63, 178, 255, 0.726);
+  header #icon-close {
+    width: 60px;
+    height: auto;
+    order: 1;
+    cursor: pointer;
+  }
+  /*------------------------------------------Desplegable*/
+  .filter {
+    background: linear-gradient(hsl(306, 59%, 15%), #a19ea1);
+    justify-content: center;
+    color: rgb(230, 223, 223);
+    border-radius: 0 0 10px 10px;
+  }
+  .filter label {
+    display: none;
+  }
+  .filter label #orden {
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .filter label #orden option {
+    font-size: 16px;
   }
   .menu {
+    padding-top: 30px;
     border-radius: 30px;
     position: fixed;
     text-decoration: none;
-    width: 100%;
-    height: 100%;
-    background: rgba(100, 96, 99, 0.6431372549);
+    width: 70%;
+    height: 30%;
+    background: rgba(83, 76, 82, 0.6431372549);
     backdrop-filter: blur(6px);
     right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 50% 0px;
+    top: 5px;
     z-index: 100;
-    transition: 0.8s;
+    transition: 0.5s;
+  }
+  .menu a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 10px;
   }
   .mostrar-menu {
-    color: rgb(255, 123, 0);
     margin: 0;
     position: absolute;
-    order: 1;
     font-size: 40px;
-    top: -10px;
+    top: -5px;
     right: 30px;
   }
   .mostrar-menu,
@@ -345,12 +346,12 @@
   }
   #grid-productos .card button {
     font-size: 16px;
-    width: 100px;
+    min-width: 100px;
     border-radius: 10px;
     background: #3f103a;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    margin: 20px;
+    margin: 10px;
   }
   #grid-productos .card img.producto {
     position: relative;
@@ -600,7 +601,7 @@
   font-size: 18px;
 }
 * body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(204, 204, 204);
 }
 
 /*# sourceMappingURL=style.css.map */
