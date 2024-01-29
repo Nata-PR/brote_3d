@@ -282,15 +282,14 @@ article{
 
     }
 }
-    /*-------------------------------------------------Servicios 992px */
-
+  
 /*============================================================ BREAKPOINT 576px ====================*/
 
 /*-------------------------------------------------Tienda 576px */
 @media screen and (max-width: 576px){
     
     #main, #servicios, #FAQ {
-    margin: 60px 40px;
+    margin: 20px 40px;
     overflow: hidden;
     height: 100%;
     }
@@ -351,12 +350,12 @@ article{
 
     }
     #mapa{
-        max-width: 400px;
+        max-width: 300px;
         height: 400px;
     }
     form {
         border-radius: 8px;
-        max-width: auto;
+        max-width: 250px;
         height: auto;
         margin: 30px;
             label {

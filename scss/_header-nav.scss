@@ -23,8 +23,6 @@
         }
     }
 
-    
-
     .banner {
         width: 100%;
         height: 100%;
@@ -45,16 +43,13 @@
     /*------------------------------------------Desplegable 1920px */
     
     .filter {
-
         border-radius: 5px;
         padding-top: 45px;
         padding-left: 20px;
-        justify-self: flex-start;
-    
+        justify-self: flex-start;   
     }
 
     #orden{
-
         text-align: center;
         border-radius: 10px;
         width: 170px;
@@ -162,25 +157,24 @@
         }
   /*------------------------------------------menu 576px */
     .menu {
-        padding-top: 30px;
         border-radius: 30px;
         position: fixed;
         width: 250px;
         height: 250px;
         background: #534c52a4;
-        backdrop-filter: blur(6px);
+        backdrop-filter: blur(10px);
         right: -100%;
         top: 5px;
         z-index: 100;
-        transition: 0.5s;
+        transition: 0.8s;
             a {
             color: #ffffff;
-            font-size: 18px;
+            font-size: 20px;
+            padding: 3px;
             text-decoration: none;
             display: block;
             text-transform: uppercase;
             text-align: left;
-            padding-left: 10px;
         }
     }
 
