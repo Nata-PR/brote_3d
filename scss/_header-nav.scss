@@ -1,6 +1,6 @@
 /*============================================================ BREAKPOINT 1920px ====================*/
 @media screen and (max-width: 1920px) {
-/*-----------------------------------------------web*/
+/*-----------------------------------------------web 1920px */
     header {
         text-align: center;      
         justify-content: center;
@@ -23,6 +23,8 @@
         }
     }
 
+    
+
     .banner {
         width: 100%;
         height: 100%;
@@ -40,17 +42,33 @@
     #check {
             display:none;
     }
+    /*------------------------------------------Desplegable 1920px */
+    
+    .filter {
 
+        border-radius: 5px;
+        padding-top: 45px;
+        padding-left: 20px;
+        justify-self: flex-start;
+    
+    }
+
+    #orden{
+
+        text-align: center;
+        border-radius: 10px;
+        width: 170px;
+    }
 
 }
-
 
 /*============================================================ BREAKPOINT 992px ====================*/
 
 @media screen and (max-width: 992px) {  
-/*-----------------------------------------------web*/     
+/*-----------------------------------------------web  992px */     
     header {
-        background: linear-gradient( #000000, #3f103a);
+       background: 
+        linear-gradient(#3f103a, #000000, #000000, #000000);
         position: sticky;
         margin-top: 0;
         padding: 5px;
@@ -84,35 +102,27 @@
     #check {
             display:none;
     }
-/*-------------------------------------------Desplegable*/
+/*-------------------------------------------Desplegable  992px  */
     .filter {
-        background: linear-gradient(#3f103a,#a19ea1);
-        display: flex;
-        justify-content: end;
-        padding-right: 30px;
-        color: rgb(255, 255, 255);
-        align-items: center;
-            label{
-            padding: 2px 20px;
-            font-weight: 500;
-                #orden{
-                height: 20px;
-                border-radius: 5px;
-                text-align: center;
-                width: 130px;
-                margin: 0;
-            }
-        }
+        border-radius: 5px;
+        padding-top: 35px;
+        padding-left: 20px;
+        justify-self: flex-start;}
+
+    #orden{
+        text-align: center;
+        border-radius: 10px;
+                width: 170px;
     }
 
-}
+
 
 
 /*============================================================ BREAKPOINT 576px ====================*/
 
 
 @media screen and (max-width: 576px) {
-    /*-----------------------------------------------web*/
+    /*-----------------------------------------------web  576px */
     header {
         height: 60px;
         justify-content: center;
@@ -132,55 +142,45 @@
             order: 1;
             cursor: pointer;
             }
+
         }
 
-    /*------------------------------------------Desplegable*/
-    .filter {
-        background: linear-gradient( hsl(306, 59%, 15%),#a19ea1);
-        justify-content:center;
-        color: rgb(230, 223, 223);
-        border-radius: 0 0 10px 10px;
+    /*------------------------------------------Desplegable 576px */
+        .filter {
+        border-radius: 5px;
+        padding-top: 35px;
+        padding-left: 20px;
+        justify-self: flex-start;}
 
-
-            label{          
-            display: none;
-
-                #orden{
-                height: 20px;
-                border-radius: 5px;
-                text-align: center;
-
-                    option {
-                        font-size: 16px;
-                    }
-            }
+        #orden{
+            text-align: center;
+            border-radius: 10px;
+            width: 170px;
+                option {
+                font-size: 16px;
+                }
         }
-    }
-
-
+  /*------------------------------------------menu 576px */
     .menu {
         padding-top: 30px;
         border-radius: 30px;
         position: fixed;
-        text-decoration: none;
-        width: 70%;
-        height: 30%;
+        width: 250px;
+        height: 250px;
         background: #534c52a4;
         backdrop-filter: blur(6px);
         right: -100%;
         top: 5px;
         z-index: 100;
         transition: 0.5s;
-
             a {
-            color: #fff;
+            color: #ffffff;
             font-size: 18px;
             text-decoration: none;
             display: block;
             text-transform: uppercase;
             text-align: left;
             padding-left: 10px;
-    
         }
     }
 
@@ -198,7 +198,7 @@
     }
 
     .esconder-menu {
-        color: rgb(255, 123, 0);
+     
         position: absolute;
         font-size: 50px;
         top: 10px;
@@ -217,4 +217,5 @@
   .banner {
               display: none;
     }
+}
 }

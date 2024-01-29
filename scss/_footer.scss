@@ -60,7 +60,6 @@
     align-items: center;
     }
 
-
 }
 
 
@@ -72,8 +71,8 @@
 #footer  {
     display: inline-flex;
     justify-content: center;
-    background: linear-gradient(#a19ea1, hsl(306, 59%, 15%),  hsl(306, 59%, 15%), hsl(309, 66%, 6%));
-    height: 50px;
+    background: linear-gradient(#000000, #3f103a);
+    height: 40px;
     width: 100%;
     position: sticky;
     z-index: 100;    
@@ -106,7 +105,7 @@
 
             a{
             margin: 5px;
-            color: white;
+            color: rgb(255, 255, 255);
             text-decoration: none;
             }
     }

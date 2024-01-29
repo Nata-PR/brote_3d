@@ -71,7 +71,7 @@ article{
         .card {
         max-width: 280px;
         max-height:500px ;
-        background-color: gainsboro;
+        background-color: rgb(255, 255, 255);
         border-radius: 15px;
 
             button {
@@ -233,14 +233,15 @@ article{
     
     background-color: none;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 40px;
+    grid-row-gap: 20px;
 
         .card {
-            height: auto;
-            background-color: gainsboro;
-            border-radius: 15px;
+        max-width: 260px;
+        max-height:480px ;
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
 
             button {
                 width: 80px;
